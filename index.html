@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mounika | Professional Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Navbar */
+    header {
+      background: #1f2937;
+      color: #fff;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    header h1 { font-size: 24px; }
+    nav a { margin-left: 20px; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #3b82f6; }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg,#3b82f6,#06b6d4);
+      color: #fff;
+      padding: 20px;
+    }
+    .hero h2 { font-size: 48px; margin-bottom: 15px; }
+    .hero p { font-size: 20px; margin-bottom: 25px; max-width: 700px; }
+    .hero .btn {
+      padding: 12px 30px;
+      background: #fff;
+      color: #3b82f6;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .hero .btn:hover { background: #3b82f6; color: #fff; }
+
+    /* Sections */
+    section { padding: 80px 30px; max-width: 1000px; margin: auto; }
+    h2.section-title {
+      font-size: 32px;
+      text-align: center;
+      color: #3b82f6;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    h2.section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #3b82f6;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* About */
+    .about { display: flex; flex-wrap: wrap; align-items: center; gap: 30px; justify-content: center; }
+    .about img { width: 180px; border-radius: 50%; border: 4px solid #3b82f6; }
+    .about p { max-width: 600px; font-size: 18px; }
+
+    /* Skills */
+    .skills-section { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+    .skills { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); flex: 1 1 300px; }
+    .skills h3 { font-size: 22px; color: #3b82f6; margin-bottom: 15px; }
+    .skills ul { list-style: none; }
+    .skills li { font-size: 16px; margin-bottom: 8px; }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 25px;
+    }
+    .project {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project:hover { transform: translateY(-10px); }
+    .project img { width: 100%; height: 180px; object-fit: cover; }
+    .project-info { padding: 20px; }
+    .project-info h3 { font-size: 22px; margin-bottom: 10px; color: #3b82f6; }
+    .project-info p { font-size: 16px; color: #555; }
+
+    /* Contact */
+    .contact form {
+      display: grid;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    .contact button {
+      padding: 12px;
+      background: #3b82f6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .contact button:hover { background: #06b6d4; }
+
+    /* Footer */
+    footer {
+      background: #1f2937;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .about { flex-direction: column; text-align: center; }
+      .skills-section { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Mounika</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Hello, I'm Mounika</h2>
+    <p>A motivated fresher with strong fundamentals in Computer Science, programming, web technologies, and software development tools, eager to learn and contribute to professional projects.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <img src="C:/Users/USER01/Pictures/passportphoto.jpg" alt="Mounika Profile Photo">
+      <p>Hello! I am a fresher passionate about technology and software development. I possess strong problem-solving skills, communication abilities, and a desire to learn new technologies and contribute effectively to projects.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-section">
+      <!-- Technical Skills -->
+      <div class="skills">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li><strong>Programming Languages:</strong> C, Java</li>
+          <li><strong>Database:</strong> DBMS (MySQL)</li>
+          <li><strong>Core CS Fundamentals:</strong> OOPS, Data Structures, Operating Systems, Computer Networks</li>
+          <li><strong>Web Technologies:</strong> HTML, CSS</li>
+          <li><strong>Platforms/Tools:</strong> VS Code, GitHub</li>
+        </ul>
+      </div>
+      <!-- Core Skills -->
+      <div class="skills">
+        <h3>Core Skills</h3>
+        <ul>
+          <li>Communication</li>
+          <li>Problem Solving & Empathy</li>
+          <li>Time Management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/400x180" alt="Portfolio Website">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>A professional portfolio website built with HTML & CSS to showcase skills, projects, and personal achievements.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x180" alt="Admission Process System">
+        <div class="project-info">
+          <h3>Admission Process System</h3>
+          <p>A project simulating an admission process system, demonstrating form handling, structured layouts, and database integration concepts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mounika. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
